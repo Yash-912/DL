@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+streamlit
+langchain
+langchain-openai
+langchain-community
+chromadb
+pymupdf
+pdfplumber
+python-pptx
+unstructured
+python-multipart
+pydantic
+python-dotenv

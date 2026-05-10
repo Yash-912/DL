@@ -1,1 +1,10 @@
 aiml_study_guide.md
+.env
+*.env
+building_rag_project1/.env
+building_rag_project1/*.env
+chroma_db/  
+__pycache__/
+*.pyc
+chroma_db/
+building_rag_project1/chroma_db/
