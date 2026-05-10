@@ -1,0 +1,12 @@
+Entire User Flow 
+A user uploads various files and folders like pdf, doc, md etc. which is then ingested 
+and chunked using chunker module ( recursive character text splitting ) and embedded using 
+openai model and stored in a vector store ( chromadb here in mvp stage)
+we have used recursive char text for chunking here with 1k chunk size and 100 chunk overlap 
+we also save the chunk metadata for future use  so that the LLM can use it to answer the query 
+
+_________AFTER USER QUERY_________
+user ask a question to chatbot 
+the query first go to preprocessor (embeddinng model) which embeds the query and then 
+finds the accurate chunk from the vector store using cosine similarity and then it is 
+retrieved, reranked and given to the llm module for the final answer. 

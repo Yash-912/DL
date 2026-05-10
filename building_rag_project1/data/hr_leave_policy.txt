@@ -1,15 +1,69 @@
 Employee Handbook - Leave Policy
 Effective Date: January 1, 2026
+Last Revised: March 15, 2026
+Department: Human Resources
+Document ID: HR-POL-2026-003
 
 1. Vacation Leave
-All full-time employees are entitled to 20 days of paid vacation per year.
-Vacation days do not roll over to the next calendar year.
+All full-time employees are entitled to 20 days of paid vacation per year. Vacation days do not roll over to the next calendar year. Employees must submit vacation requests at least two weeks in advance through the HR portal. Managers are expected to respond to vacation requests within 3 business days. During peak business periods (Q4 and annual audit season), vacation requests may be subject to additional approval from the department head.
+
+Part-time employees receive vacation days on a pro-rata basis. For example, an employee working 3 days per week would receive 12 vacation days per year. Contractors and temporary staff are not eligible for paid vacation under this policy.
+
+Unused vacation days will be forfeited at the end of the calendar year unless the employee has received written approval from their manager for an exception. In exceptional circumstances, up to 5 unused days may be carried forward to Q1 of the following year, but must be used by March 31.
 
 2. Sick Leave
-Employees receive 10 paid sick days per year. A doctor's note is required for absences exceeding 3 consecutive days.
+Employees receive 10 paid sick days per year. A doctor's note is required for absences exceeding 3 consecutive days. Sick leave may be used for the employee's own illness, injury, or medical appointments. It may also be used to care for an immediate family member (spouse, child, or parent) who is ill.
 
-3. Maternity/Paternity Leave
-The company provides 16 weeks of fully paid maternity leave and 8 weeks of fully paid paternity leave for the birth or adoption of a child.
+Sick leave cannot be used as vacation. Any pattern of sick leave abuse, such as consistently taking sick days on Mondays or Fridays, may trigger a review by Human Resources. If abuse is confirmed, the employee may face disciplinary action up to and including termination.
+
+Employees who exhaust their sick leave may request additional unpaid medical leave. Such requests must be accompanied by documentation from a licensed healthcare provider and are subject to approval by HR and the employee's direct manager.
+
+3. Maternity and Paternity Leave
+The company provides 16 weeks of fully paid maternity leave and 8 weeks of fully paid paternity leave for the birth or adoption of a child. Leave begins on the date of birth or adoption placement. Employees must notify HR at least 30 days before the expected start of leave, or as soon as practicable in cases of emergency.
+
+During maternity or paternity leave, the employee's position is guaranteed. The employee will return to the same role or an equivalent position with the same pay and benefits. Health insurance coverage continues during the leave period at the same cost-sharing arrangement as before the leave.
+
+Employees may request an extension of up to 4 additional weeks of unpaid leave following the paid leave period. Such extensions must be requested in writing at least 2 weeks before the end of the paid leave period. Additional unpaid leave beyond 4 weeks requires VP-level approval.
 
 4. Bereavement Leave
-Employees may take up to 5 days of paid bereavement leave in the event of the death of an immediate family member.
+Employees may take up to 5 days of paid bereavement leave in the event of the death of an immediate family member. Immediate family is defined as spouse, domestic partner, parent, child, sibling, grandparent, or grandchild. For extended family members (aunt, uncle, cousin, in-law), employees may take up to 3 days of paid bereavement leave.
+
+If additional time is needed, employees may use their vacation days or request unpaid leave. The company recognizes that grief is personal and does not require documentation for bereavement leave, though HR may request confirmation in unusual circumstances.
+
+5. Personal Days
+Each employee receives 3 personal days per year, which may be used for any reason without prior explanation. Personal days must be requested at least 24 hours in advance except in emergencies. Unlike vacation days, unused personal days do roll over to the following year, up to a maximum accrual of 6 days.
+
+6. Jury Duty and Civic Leave
+Employees called for jury duty will receive full pay for up to 10 business days per year. If jury service extends beyond 10 days, the employee will receive the difference between their regular salary and the jury duty compensation paid by the court. Employees must provide a copy of the jury summons to HR within 3 days of receiving it.
+
+Employees who volunteer as election workers are entitled to 1 paid day off per election cycle. Employees wishing to vote in person during work hours may take up to 2 hours of paid time off on election day, subject to manager approval of timing.
+
+7. Military Leave
+The company complies with the Uniformed Services Employment and Reemployment Rights Act (USERRA). Employees who are members of the military reserves or National Guard are entitled to unpaid leave for required training and active duty. Upon return, employees will be reinstated to their previous position or an equivalent role with the same seniority, status, and pay.
+
+During military leave of up to 30 days, the employee's health insurance continues under the same terms. For longer deployments, employees may elect to continue coverage under COBRA at their own expense for up to 24 months.
+
+8. Sabbatical Leave
+Employees who have completed 7 or more years of continuous service are eligible for a sabbatical leave of up to 4 weeks. Sabbatical leave is paid at 50% of the employee's regular salary. The purpose of sabbatical is personal development, rest, or community service. Employees must submit a sabbatical proposal to their manager and HR at least 90 days in advance.
+
+Only one sabbatical may be taken per 7-year period. The employee's position is guaranteed during sabbatical. Benefits continue at the normal cost-sharing arrangement. Upon return, the employee must remain with the company for at least 12 months or repay the sabbatical compensation on a pro-rata basis.
+
+9. Leave Without Pay
+In circumstances not covered by other leave categories, employees may request unpaid leave for up to 12 weeks per year. Approval is at the discretion of the employee's manager and HR. During unpaid leave, the employee may continue health insurance coverage by paying the full premium amount. Seniority and tenure continue to accrue during approved unpaid leave.
+
+10. Holiday Schedule
+The company observes the following paid holidays: New Year's Day, Martin Luther King Jr. Day, Presidents' Day, Memorial Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving Day, the day after Thanksgiving, Christmas Eve, and Christmas Day. When a holiday falls on a weekend, the preceding Friday or following Monday will be observed.
+
+Employees required to work on company holidays will receive their regular pay plus an additional day of compensatory time off, to be used within 60 days.
+
+11. Remote Work and Flexible Hours
+Employees may request flexible work arrangements including remote work, compressed work weeks, or adjusted start and end times. All flexible work requests must be submitted through the HR portal and approved by the employee's direct manager. Approval is based on job requirements, team needs, and individual performance.
+
+Remote work employees are expected to maintain the same productivity and availability standards as on-site employees. The company will provide a one-time stipend of $500 for home office setup for employees approved for full-time remote work. Internet and utility costs remain the employee's responsibility.
+
+12. Policy Violations and Enforcement
+Violations of this leave policy may result in disciplinary action ranging from verbal warning to termination, depending on severity and frequency. Falsifying leave records, including submitting fraudulent doctor's notes or misrepresenting the reason for leave, is grounds for immediate termination.
+
+Employees who believe they have been unfairly denied leave may file a grievance through the HR department. All grievances will be investigated within 10 business days, and the employee will receive a written response with the findings and any remedial action.
+
+For questions about this policy, contact the HR department at hr@company.com or extension 4500.

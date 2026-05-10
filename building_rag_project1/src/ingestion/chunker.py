@@ -37,7 +37,7 @@ class DocumentChunker:
         # If the parsed data is already small (paragraph level), the text splitter will just wrap them
         # if they are large, it will split them.
         # For better context, we might want to group elements before splitting, but for MVP this is fine.
-        
+        print(docs)
         chunked_docs = self.splitter.split_documents(docs)
         
         # Add additional metadata
