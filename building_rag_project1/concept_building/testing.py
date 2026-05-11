@@ -69,15 +69,8 @@ def run_comparison():
 
     # --- Strategy 4: Semantic (FREE local embeddings, no API cost) ---
     print("\n\nLoading local HuggingFace embedding model (first run downloads ~90MB)...")
-    # Disable TensorFlow to prevent protobuf import crashes, force PyTorch only
-    os.environ["USE_TF"] = "0"
-    os.environ["USE_TENSORFLOW"] = "0"
-    os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
-    
-    from langchain_huggingface import HuggingFaceEmbeddings
-    embeddings = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
-    )
+    from src.embeddings.sentence_transformer import SentenceTransformerEmbeddings
+    embeddings = SentenceTransformerEmbeddings()
 
     semantic = SemanticChunker(similarity_threshold=0.75)
     semantic_chunks = semantic.chunk(data, embeddings_model=embeddings)

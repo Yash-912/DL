@@ -3,14 +3,14 @@ from typing import List
 # pyrefly: ignore [missing-import]
 from langchain_community.vectorstores import Chroma
 from langchain_core.documents import Document
+from src.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 
 class VectorStore:
     def __init__(self, persist_directory: str = "./chroma_db"):
         self.persist_directory = persist_directory
 
-        # Use Featherless (Qwen) embeddings for both indexing and query
-        from src.embeddings.featherless import FeatherlessEmbeddings
-        self.embeddings = FeatherlessEmbeddings()
+        # Use a local SentenceTransformer model for both indexing and query
+        self.embeddings = SentenceTransformerEmbeddings()
         
         self.db = Chroma(
             persist_directory=self.persist_directory,

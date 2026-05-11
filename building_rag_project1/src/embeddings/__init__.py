@@ -1,0 +1,1 @@
+from src.embeddings.sentence_transformer import SentenceTransformerEmbeddings

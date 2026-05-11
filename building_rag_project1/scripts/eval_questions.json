@@ -1,114 +1,142 @@
 [
   {
-    "question": "What is the target completion date for Project Phoenix Phase 1?",
-    "ground_truth": "Q4 2026"
+    "question": "What is the **improvement percentage** of the **PACS algorithm** over the heuristic beam-search approach on the **FOLIO dataset**?",
+    "ground_truth": "8%"
   },
   {
-    "question": "How many days of vacation do full-time employees get?",
-    "ground_truth": "20 days"
+    "question": "Which **benchmark streams** were normalized to a unified shell interface for evaluating the **A3 framework**?",
+    "ground_truth": "AgentBench (OS and database), DataBench (tabular QA), EHRCon (clinical consistency), and TableBench (structured table reasoning)"
   },
   {
-    "question": "What database is Project Phoenix migrating to?",
-    "ground_truth": "PostgreSQL"
+    "question": "What is the **maximum context length** used during the training of the **Qwen3-14B** policy model for shell operations?",
+    "ground_truth": "32,768"
   },
   {
-    "question": "How long is the paternity leave?",
-    "ground_truth": "8 weeks"
+    "question": "How many **retinal fundus cases** are included in the fixed split for **MPD2-Router** experiments?",
+    "ground_truth": "3,195 cases"
   },
   {
-    "question": "If someone wants to request vacation, how far in advance do they need to submit it?",
-    "ground_truth": "two weeks"
+    "question": "What was the **execution accuracy** achieved by **CA-SQL** on the 'challenging' tier of the **BIRD benchmark** using **GPT-4o-mini**?",
+    "ground_truth": "51.72%"
   },
   {
-    "question": "What is the response time expectation for managers on vacation requests?",
-    "ground_truth": "3 business days"
+    "question": "In the **GraphDPO** pipeline, what is the purpose of **equivalence-class masking**?",
+    "ground_truth": "It removes intra-group comparisons so that each response is contrasted only with strictly worse groups"
   },
   {
-    "question": "Do vacation days roll over to the next calendar year?",
-    "ground_truth": "do not roll over"
+    "question": "What **evaluation metric** does **Gen-Arena** use to measure strict commitment-level intent fulfillment in image generation?",
+    "ground_truth": "Entity-Gated Intent Pass Rate (EGIP)"
   },
   {
-    "question": "Under exceptional circumstances, how many unused vacation days can be carried into Q1?",
-    "ground_truth": "up to 5"
+    "question": "How many **entities and constraints** are contained in the **Gen-Arena** benchmark?",
+    "ground_truth": "1,954 entities and 2,533 constraints"
   },
   {
-    "question": "How many paid sick days does the policy grant each year?",
-    "ground_truth": "10 paid sick days per year"
+    "question": "What is the **normalized reward** achieved by the **GRPO-tuned Llama-3.1-8B** model on held-out rubric evaluation?",
+    "ground_truth": "71.7%"
   },
   {
-    "question": "After how many consecutive sick days is a doctor's note required?",
-    "ground_truth": "exceeding 3 consecutive days"
+    "question": "What **phenomenon** describes **Flow-OPD** succeeding in edge cases where all individual teacher models fail?",
+    "ground_truth": "Teacher-Surpassing"
   },
   {
-    "question": "How long is the fully paid maternity leave?",
-    "ground_truth": "16 weeks"
+    "question": "What is the **average reduction** in **LLMcritic calls** recorded by the **VecCISC + HAC** methodology?",
+    "ground_truth": "30.2%"
   },
   {
-    "question": "How much paid bereavement leave is allowed for an immediate family member?",
-    "ground_truth": "5 days of paid bereavement leave"
+    "question": "In the **ShellOps** task anatomy, which category describes a deduplicated list of values from the workspace?",
+    "ground_truth": "Lookup"
   },
   {
-    "question": "How many personal days are given each year and do they roll over?",
-    "ground_truth": "3 personal days per year"
+    "question": "What is the **environment horizon** length set for the **A3 training rollouts**?",
+    "ground_truth": "6 steps"
   },
   {
-    "question": "What is the maximum accrual for unused personal days?",
-    "ground_truth": "maximum accrual of 6 days"
+    "question": "What are the **three datasets** adapted for evaluating **abductive reasoning** in the PACS study?",
+    "ground_truth": "Abductive-FOLIO, CosmosQA, and QUAIL"
   },
   {
-    "question": "How much paid time off is provided for jury duty each year?",
-    "ground_truth": "full pay for up to 10 business days per year"
+    "question": "What **percentage** of cases does **MPD2-Router** defer for human review according to the general experiment results?",
+    "ground_truth": "43.7%"
   },
   {
-    "question": "If someone volunteers as an election worker, what paid time off is available?",
-    "ground_truth": "1 paid day off per election cycle"
+    "question": "Which **base policy** was used for **GraphDPO** mathematical reasoning experiments on **GSM8K**?",
+    "ground_truth": "Qwen3-4B-Thinking-2507"
   },
   {
-    "question": "How much paid time off can employees take to vote in person on election day?",
-    "ground_truth": "up to 2 hours of paid time off"
+    "question": "What is the **maximum number of generation attempts** set for each case in the **SCOPE** generation lifecycle?",
+    "ground_truth": "3 attempts"
   },
   {
-    "question": "For sabbatical leave, how many years of continuous service are required?",
-    "ground_truth": "7 or more years of continuous service"
+    "question": "What **sampling strategies** were experimented with for block diffusion unmasking in **BLT-D models**?",
+    "ground_truth": "Confidence-based unmasking and entropy-bounded sampling"
   },
   {
-    "question": "What is the pay rate during an approved sabbatical leave?",
-    "ground_truth": "paid at 50% of the employee's regular salary"
+    "question": "What is the **task difficulty score range** generated by the LLM in the **CA-SQL** pipeline?",
+    "ground_truth": "Integers between 1 and 5"
   },
   {
-    "question": "In cases not covered by other leave categories, what is the maximum unpaid leave per year?",
-    "ground_truth": "up to 12 weeks per year"
+    "question": "What are the **four components** of a **rubric criterion** defined in the Rubric-Grounded RL framework?",
+    "ground_truth": "Weight, description, required elements, expected keywords, and verification method"
   },
   {
-    "question": "How much is the one-time stipend for home office setup for full-time remote work?",
-    "ground_truth": "$500"
+    "question": "What **image resolution** is used for the **Flow-OPD** sampling process?",
+    "ground_truth": "512"
   },
   {
-    "question": "Where should employees send questions about the leave policy?",
-    "ground_truth": "hr@company.com"
+    "question": "Which **embedding model** was selected for the **VecCISC** pipeline to capture semantic details in reasoning traces?",
+    "ground_truth": "OpenAI’s text-embedding-3-small"
   },
   {
-    "question": "What architecture is Project Phoenix migrating to, and what is the program about?",
-    "ground_truth": "microservices architecture"
+    "question": "In the **EHRCon** case study, what physician claim was verified against the database records for **Amiodarone**?",
+    "ground_truth": "amiodarone = 1 mg/min"
   },
   {
-    "question": "What orchestration platform is required for Project Phoenix services?",
-    "ground_truth": "Kubernetes"
+    "question": "What was the **reference answer** for the total number of **PR seats** won by all parties in the **TableBench** election task?",
+    "ground_truth": "48"
   },
   {
-    "question": "What containerization tool is required for all services in Project Phoenix?",
-    "ground_truth": "Docker"
+    "question": "What is the **effective batch size** for the **GRPO** optimization steps in rubric-grounded training?",
+    "ground_truth": "2048"
   },
   {
-    "question": "What deployment tool is mandated, and are manual production deployments allowed?",
-    "ground_truth": "ArgoCD"
+    "question": "How does the **Paranoia Ratio** shift as **history length** increases in multi-agent social dilemmas?",
+    "ground_truth": "It transitions monotonically from cooperative-leaning to defensive-leaning reasoning"
   },
   {
-    "question": "How many senior engineer approvals are required before merging PRs?",
-    "ground_truth": "at least two senior engineers"
+    "question": "What **percentage of token usage** is accounted for by **LLMcritic calls** in the entire **VecCISC** pipeline?",
+    "ground_truth": "77%"
   },
   {
-    "question": "Which database migration is stated for Project Phoenix?",
-    "ground_truth": "Oracle to PostgreSQL"
+    "question": "What was the **pass@1 score** for the **BLT 1B** model on the **HumanEval** benchmark using autoregressive decoding?",
+    "ground_truth": "12.80"
+  },
+  {
+    "question": "What **evolutionary operators** are used by **CA-SQL** to expand the schema subset seed pool?",
+    "ground_truth": "Crossover and mutation"
+  },
+  {
+    "question": "In the **Rubric-Grounded RL** pipeline, what information is **deliberately hidden** from the policy model but shown to the judge?",
+    "ground_truth": "The grounding passage (auxiliary grounding)"
+  },
+  {
+    "question": "What was the **peak learning rate** used during the training of **GraphDPO** for the **MATH** benchmark?",
+    "ground_truth": "2 × 10−6"
+  },
+  {
+    "question": "How much **memory bandwidth decrease** did the **BLT-D-16 1B** model achieve compared to the baseline **BLT** on HumanEval?",
+    "ground_truth": "Up to 85.54%"
+  },
+  {
+    "question": "Which **glaucoma reader** achieved the highest accuracy among the **CHAKSU readers** listed in the expert performance table?",
+    "ground_truth": "chaksu_expert_1 with 0.947 accuracy"
+  },
+  {
+    "question": "What is the **crossover probability** parameter used in the **CA-SQL** Text-to-SQL algorithm?",
+    "ground_truth": "50% (or 0.5)"
+  },
+  {
+    "question": "What is the **maximum number of tokens** allowed for the **LLMcritic's** concise reasoning trace in social dilemma games?",
+    "ground_truth": "500 words"
   }
 ]

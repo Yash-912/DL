@@ -2,8 +2,8 @@ fastapi
 uvicorn
 streamlit
 langchain
-langchain-openai
 langchain-community
+sentence-transformers
 chromadb
 pymupdf
 pdfplumber
@@ -13,3 +13,4 @@ python-multipart
 pydantic
 python-dotenv
 requests
+feedparser
