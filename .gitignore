@@ -51,7 +51,12 @@ building_rag_project1/chroma_db_eval/
 # Evaluation outputs (generated benchmarks)
 building_rag_project1/scripts/chunking_eval_outputs/
 building_rag_project1/scripts/chunking_eval_test_out/
+building_rag_project1/scripts/query_transform_eval_outputs/
+building_rag_project1/scripts/query_transform_eval_test_out/
 building_rag_project1/data/
+# Embedding cache
+embedding_cache.sqlite
+building_rag_project1/embedding_cache.sqlite
 # Temporary files
 *.tmp
 *.temp
@@ -60,3 +65,5 @@ tmp/
 
 # Study guides (local notes)
 aiml_study_guide.md
+
+next_instructions.txt

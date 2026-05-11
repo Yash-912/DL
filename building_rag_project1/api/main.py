@@ -7,9 +7,6 @@ from dotenv import load_dotenv
 # Load env before importing our modules
 load_dotenv()
 
-# Suppress ChromaDB telemetry noise
-os.environ.setdefault("ANONYMIZED_TELEMETRY", "False")
-
 from src.ingestion.parser import DocumentParser
 from src.ingestion.chunker import DocumentChunker
 from src.storage.vector_store import VectorStore
@@ -22,15 +19,16 @@ app = FastAPI(title="Multi-modal RAG API", version="1.0")
 parser = DocumentParser()
 chunker = DocumentChunker()
 
-# Use absolute path for chroma_db to ensure it's saved in the project root
-DB_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "chroma_db")
-vector_store = VectorStore(persist_directory=DB_DIR)
+vector_store = VectorStore()
 
 retriever = DocumentRetriever(vector_store)
 generator = AnswerGenerator()
 
 class QueryRequest(BaseModel):
     query: str
+    top_k: int = 5
+    transform_mode: str = "none"
+    alpha: float = 0.5
 
 class QueryResponse(BaseModel):
     answer: str
@@ -74,7 +72,12 @@ async def query_documents(request: QueryRequest):
     """
     try:
         # Retrieve context
-        context_chunks = retriever.retrieve(request.query)
+        context_chunks = retriever.retrieve(
+            request.query,
+            top_k=request.top_k,
+            transform_mode=request.transform_mode,
+            alpha=request.alpha,
+        )
         
         # Generate answer
         answer, sources = generator.generate(request.query, context_chunks)

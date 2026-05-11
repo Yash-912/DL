@@ -2,9 +2,10 @@ fastapi
 uvicorn
 streamlit
 langchain
+langchain-openai
 langchain-community
 sentence-transformers
-chromadb
+weaviate-client==3.26.7
 pymupdf
 pdfplumber
 python-pptx

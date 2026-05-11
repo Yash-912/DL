@@ -8,9 +8,9 @@ import os
 import re
 import statistics
 import sys
-import tempfile
 import time
 import unicodedata
+import uuid
 from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
@@ -343,9 +343,9 @@ def evaluate_strategy(
 ) -> Tuple[Dict[str, Any], List[Dict[str, Any]]]:
     bundle = build_strategy(strategy, parsed_data, embeddings, args)
 
-    with tempfile.TemporaryDirectory(prefix=f"chunk_eval_{strategy}_", ignore_cleanup_errors=True) as tmp_dir:
-        vector_store = VectorStore(persist_directory=tmp_dir)
-        try:
+    collection_name = f"ChunkEval_{strategy}_{uuid.uuid4().hex[:8]}"
+    vector_store = VectorStore(collection_name=collection_name)
+    try:
             vector_store.add_documents(bundle.index_docs)
 
             question_rows: List[Dict[str, Any]] = []
@@ -439,6 +439,9 @@ def evaluate_strategy(
             )
 
             return summary, question_rows
+    finally:
+        try:
+            vector_store.delete_collection()
         finally:
             del vector_store
             gc.collect()

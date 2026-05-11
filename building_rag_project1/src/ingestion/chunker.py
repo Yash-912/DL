@@ -1,5 +1,6 @@
+import hashlib
 from typing import List, Dict, Any
-from datetime import datetime
+from datetime import datetime, timezone
 # pyrefly: ignore [missing-import]
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
@@ -41,10 +42,14 @@ class DocumentChunker:
         chunked_docs = self.splitter.split_documents(docs)
         
         # Add additional metadata
-        ingested_at = datetime.utcnow().isoformat()
+        ingested_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+        total_chunks = len(chunked_docs)
         
         for i, doc in enumerate(chunked_docs):
             doc.metadata["chunk_index"] = i
             doc.metadata["ingested_at"] = ingested_at
+            doc.metadata["total_chunks"] = total_chunks
+            content_hash = hashlib.sha256(doc.page_content.encode("utf-8")).hexdigest()
+            doc.metadata["content_hash"] = content_hash
             
         return chunked_docs
