@@ -8,3 +8,4 @@ __pycache__/
 *.pyc
 chroma_db/
 building_rag_project1/chroma_db/
+building_rag_project1/chroma_db_eval/

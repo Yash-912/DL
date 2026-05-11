@@ -1,0 +1,114 @@
+[
+  {
+    "question": "What is the target completion date for Project Phoenix Phase 1?",
+    "ground_truth": "Q4 2026"
+  },
+  {
+    "question": "How many days of vacation do full-time employees get?",
+    "ground_truth": "20 days"
+  },
+  {
+    "question": "What database is Project Phoenix migrating to?",
+    "ground_truth": "PostgreSQL"
+  },
+  {
+    "question": "How long is the paternity leave?",
+    "ground_truth": "8 weeks"
+  },
+  {
+    "question": "If someone wants to request vacation, how far in advance do they need to submit it?",
+    "ground_truth": "two weeks"
+  },
+  {
+    "question": "What is the response time expectation for managers on vacation requests?",
+    "ground_truth": "3 business days"
+  },
+  {
+    "question": "Do vacation days roll over to the next calendar year?",
+    "ground_truth": "do not roll over"
+  },
+  {
+    "question": "Under exceptional circumstances, how many unused vacation days can be carried into Q1?",
+    "ground_truth": "up to 5"
+  },
+  {
+    "question": "How many paid sick days does the policy grant each year?",
+    "ground_truth": "10 paid sick days per year"
+  },
+  {
+    "question": "After how many consecutive sick days is a doctor's note required?",
+    "ground_truth": "exceeding 3 consecutive days"
+  },
+  {
+    "question": "How long is the fully paid maternity leave?",
+    "ground_truth": "16 weeks"
+  },
+  {
+    "question": "How much paid bereavement leave is allowed for an immediate family member?",
+    "ground_truth": "5 days of paid bereavement leave"
+  },
+  {
+    "question": "How many personal days are given each year and do they roll over?",
+    "ground_truth": "3 personal days per year"
+  },
+  {
+    "question": "What is the maximum accrual for unused personal days?",
+    "ground_truth": "maximum accrual of 6 days"
+  },
+  {
+    "question": "How much paid time off is provided for jury duty each year?",
+    "ground_truth": "full pay for up to 10 business days per year"
+  },
+  {
+    "question": "If someone volunteers as an election worker, what paid time off is available?",
+    "ground_truth": "1 paid day off per election cycle"
+  },
+  {
+    "question": "How much paid time off can employees take to vote in person on election day?",
+    "ground_truth": "up to 2 hours of paid time off"
+  },
+  {
+    "question": "For sabbatical leave, how many years of continuous service are required?",
+    "ground_truth": "7 or more years of continuous service"
+  },
+  {
+    "question": "What is the pay rate during an approved sabbatical leave?",
+    "ground_truth": "paid at 50% of the employee's regular salary"
+  },
+  {
+    "question": "In cases not covered by other leave categories, what is the maximum unpaid leave per year?",
+    "ground_truth": "up to 12 weeks per year"
+  },
+  {
+    "question": "How much is the one-time stipend for home office setup for full-time remote work?",
+    "ground_truth": "$500"
+  },
+  {
+    "question": "Where should employees send questions about the leave policy?",
+    "ground_truth": "hr@company.com"
+  },
+  {
+    "question": "What architecture is Project Phoenix migrating to, and what is the program about?",
+    "ground_truth": "microservices architecture"
+  },
+  {
+    "question": "What orchestration platform is required for Project Phoenix services?",
+    "ground_truth": "Kubernetes"
+  },
+  {
+    "question": "What containerization tool is required for all services in Project Phoenix?",
+    "ground_truth": "Docker"
+  },
+  {
+    "question": "What deployment tool is mandated, and are manual production deployments allowed?",
+    "ground_truth": "ArgoCD"
+  },
+  {
+    "question": "How many senior engineer approvals are required before merging PRs?",
+    "ground_truth": "at least two senior engineers"
+  },
+  {
+    "question": "Which database migration is stated for Project Phoenix?",
+    "ground_truth": "Oracle to PostgreSQL"
+  }
+]
