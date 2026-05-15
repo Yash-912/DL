@@ -13,11 +13,11 @@ class QueryVariant:
 
 
 class QueryTransformer:
-    def __init__(self, model_name: str = "openai/gpt-4o-mini"):
+    def __init__(self, model_name: str = "llama-3.1-8b-instant"):
         self.llm = ChatOpenAI(
             model=model_name,
-            openai_api_key=self._get_openrouter_key(),
-            openai_api_base="https://openrouter.ai/api/v1",
+            openai_api_key=self._get_groq_key(),
+            openai_api_base="https://api.groq.com/openai/v1",
             temperature=0.0,
             max_tokens=256,
         )
@@ -74,10 +74,10 @@ class QueryTransformer:
         response = self.llm.invoke(messages)
         return response.content.strip()
 
-    def _get_openrouter_key(self) -> str:
+    def _get_groq_key(self) -> str:
         from os import getenv
 
-        api_key = getenv("OPENROUTER_API_KEY")
+        api_key = getenv("GROQ_API_KEY")
         if not api_key:
-            raise ValueError("OPENROUTER_API_KEY environment variable not set")
+            raise ValueError("GROQ_API_KEY environment variable not set")
         return api_key

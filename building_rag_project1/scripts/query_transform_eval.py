@@ -184,7 +184,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--alpha", type=float, default=0.5)
     parser.add_argument("--limit-questions", type=int, default=None)
     parser.add_argument("--limit-files", type=int, default=None)
-    parser.add_argument("--model", default="openai/gpt-4o-mini")
+    parser.add_argument("--model", default="llama-3.1-8b-instant")
     parser.add_argument("--collection-name", default=None)
     parser.add_argument("--reuse-index", action="store_true")
     return parser.parse_args()
@@ -205,6 +205,9 @@ def main() -> None:
         parsed_data = load_corpus(Path(args.data_dir), parser, max_files=args.limit_files)
         if not parsed_data:
             raise ValueError(f"No parseable documents found in {args.data_dir}")
+
+    if not os.getenv("GROQ_API_KEY"):
+        raise ValueError("GROQ_API_KEY environment variable not set")
 
     collection_name = args.collection_name or f"QueryTransformEval_{uuid.uuid4().hex[:8]}"
     vector_store = VectorStore(collection_name=collection_name)

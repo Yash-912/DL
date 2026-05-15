@@ -488,7 +488,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--top-k", type=int, default=5, help="Retriever top-k")
     parser.add_argument("--limit-questions", type=int, default=None, help="Evaluate only the first N questions")
     parser.add_argument("--limit-files", type=int, default=None, help="Evaluate only the first N corpus files")
-    parser.add_argument("--model", default="openai/gpt-4o-mini", help="OpenRouter model used for answers")
+    parser.add_argument("--model", default="llama-3.1-8b-instant", help="Groq model used for answers")
     parser.add_argument("--fixed-chunk-size", type=int, default=500)
     parser.add_argument("--fixed-overlap", type=int, default=50)
     parser.add_argument("--recursive-chunk-size", type=int, default=1000)
@@ -516,8 +516,8 @@ def main() -> None:
     if not parsed_data:
         raise ValueError(f"No parseable documents found in {args.data_dir}")
 
-    if not os.getenv("OPENROUTER_API_KEY"):
-        raise ValueError("OPENROUTER_API_KEY environment variable not set")
+    if not os.getenv("GROQ_API_KEY"):
+        raise ValueError("GROQ_API_KEY environment variable not set")
 
     embeddings = SentenceTransformerEmbeddings()
     generator = AnswerGenerator(model_name=args.model)

@@ -5,7 +5,7 @@ langchain
 langchain-openai
 langchain-community
 sentence-transformers
-weaviate-client==3.26.7
+pinecone
 pymupdf
 pdfplumber
 python-pptx

@@ -4,19 +4,18 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 
 class AnswerGenerator:
-    # Use gpt-4o-mini — much cheaper per token than gpt-4o.
-    # Raise max_tokens only after upgrading OpenRouter credits.
-    def __init__(self, model_name: str = "openai/gpt-4o-mini"):
-        openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
-        if not openrouter_api_key:
-            raise ValueError("OPENROUTER_API_KEY environment variable not set")
+    # Default to Groq with a fast, reliable model.
+    def __init__(self, model_name: str = "llama-3.1-8b-instant"):
+        groq_api_key = os.getenv("GROQ_API_KEY")
+        if not groq_api_key:
+            raise ValueError("GROQ_API_KEY environment variable not set")
 
         self.llm = ChatOpenAI(
             model=model_name,
-            openai_api_key=openrouter_api_key,
-            openai_api_base="https://openrouter.ai/api/v1",
-            max_tokens=400,   # Keep low for free-tier credits; increase when on paid plan
-            temperature=0.0
+            openai_api_key=groq_api_key,
+            openai_api_base="https://api.groq.com/openai/v1",
+            max_tokens=400,
+            temperature=0.0,
         )
         
         self.system_prompt = """You are a precise question-answering assistant. Answer the user's question 
